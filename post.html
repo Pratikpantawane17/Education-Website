@@ -1,39 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
+<head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tech2 etc Tutorial</title>
+        <title> TechEduca - Education Website </title>
 
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-
+        <!-- External CSS -->
         <link rel="stylesheet" href="style.css">
+
+       <!-- font Awesome CDN link -->
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-    </head>
+</head>
 
-    <body>
+<body>
 
         <!-- Navigation -->
+        <nav>
+            <img src="images/logo.svg">
+            <div class="navigation">
+                <ul>
+                    <!-- For Toggle Menu -->
+                    <i class="fa-solid fa-xmark" id="menu-close"></i>
 
-        <!-- Home -->
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html" class="active">Blogs</a></li>
+                    <li><a href="course.html">Courses</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
 
-        <!-- post -->
+                <img src="images/menu.png" id="menu" onclick="toggle()">
+            </div>
+        </nav>
+
+
+
+         <!-- Post -->
+        <section id="blog-container">
+            <div class="blogs blog-post">
+                <div class="post">
+                    <img src="images/b1.jpg">
+                    <h3>Learn Full Stack Web Dev in Easiest Way</h3>
+                    <p>In today’s digital age, mastering Full Stack Web Development is essential for anyone looking to build dynamic web applications. Whether you're a beginner starting from scratch or an experienced coder aiming to expand your skills, learning both frontend and backend development makes you a versatile and in-demand professional. Companies are actively seeking developers who can handle the entire development process, from designing user-friendly interfaces to managing complex databases and server-side logic.
+                        <br><br>
+                        Why should you learn Full Stack Development? It enables you to build complete web applications independently, opening doors to freelancing, startup opportunities, and high-paying jobs in the tech industry. Full stack developers have expertise in multiple technologies, including HTML, CSS, JavaScript, React.js, Node.js, Express.js, and MongoDB. This versatility gives you the flexibility to work on different projects, whether it’s an e-commerce platform, social media app, or enterprise-level software.
+                        <br><br>
+                        At TechEduca, we provide a structured learning approach designed to take you from beginner to pro. Our courses cover frontend development (HTML, CSS, JavaScript, React.js), backend development (Node.js, Express.js, databases like MongoDB and MySQL), and essential tools like GitHub, Firebase, and cloud deployment platforms. With hands-on projects and expert guidance, you’ll gain real-world experience and build a strong portfolio to showcase your skills.
+                        <br><br>
+                        If you’re ready to start your journey as a Full Stack Developer, now is the time! TechEduca offers interactive modules, mentorship support, and lifetime access to learning resources, ensuring you stay updated with industry trends. Whether you are a student, freelancer, entrepreneur, or working professional, this is your chance to create scalable, high-performance applications and elevate your career. Join us today and take your first step toward becoming a Full Stack Developer!     
+                    </p>
+
+                <a href="#">Read Next</a>
+                </div>
+            </div>
+        </section>
+
+      
+
 
         <!-- Footer -->
+         <footer id="footer">
+
+            <div class="footer-col">
+                <h3>Top Products</h3>
+                <li>Manage Reputation</li>
+                <li>Power Tools</li>
+                <li>Managed Website</li>
+                <li>Marketing Service</li>
+            </div>
+
+            <div class="footer-col">
+                <h3>Power Tools</h3>
+                <li>Jobs</li>
+                <li>Marketing Service</li>
+                <li>Top Products</li>
+                <li>Manage Reputation</li>
+            </div>
+
+            <div class="footer-col">
+                <h3>Power Tools</h3>
+                <li>Managed Website</li>
+                <li>Manage Reputation</li>
+                <li>Top Products</li>
+                <li>Marketing Service   </li>
+            </div>
+
+            <div class="footer-col">
+                <h3>Guides</h3>
+                <li>Research</li>
+                <li>Experts</li>
+                <li>Managed Website</li>
+                <li>Marketing Service</li>
+            </div>
+
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p>You can trust us. we only send promo offers.</p>
+    
+                <div class="subscribe">
+                    <input type="email" placeholder="Your email Address">
+                    <a href="#" class="green">SUBSCRIBE</a>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>Copyright @ 2025 All Rights Reserved | This template is made by <a href="../Portofilo Website/index.html" target="_blank" id="link_to_portfolio">Pratik</a></p>
+
+                <div class="profile-links">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+
+            </div>
+         </footer>
 
 
-        <script>
+         <!------------ Back to top Button ----------->
+        <button id="backToTop" onclick="scrollToTop()">↑ Back to Top</button>
 
-            // Navaigation Bar
-
-        </script>
-
-
-    </body>
-
+        <script src="script.js"> </script>
+</body>
 </html>

@@ -1,37 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
+<head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tech2 etc Tutorial</title>
+        <title> TechEduca - Education Website </title>
 
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-
+        <!-- External CSS -->
         <link rel="stylesheet" href="style.css">
+
+       <!-- font Awesome CDN link -->
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-    </head>
+</head>
 
-    <body>
+<body>
 
         <!-- Navigation -->
+        <nav>
+            <img src="images/logo.svg">
+            <div class="navigation">
+                <ul>
+                    <!-- For Toggle Menu -->
+                    <i class="fa-solid fa-xmark" id="menu-close"></i>
 
-        <!-- Home -->
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                    <li><a href="course.html" class="active">Courses</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+
+                <img src="images/menu.png" id="menu" onclick="toggle()">
+            </div>
+        </nav>
+
+
+        <!-- Home Landing Page -->
+         <section id="about-home">
+            <h2>About TechEduca</h2>
+            <!-- <p>At TechEduca, we are on a mission to empower learners with cutting-edge technology education. Our platform bridges the gap between knowledge and real-world application, offering expert-led courses, hands-on projects, and a thriving community. Whether you're a beginner or an aspiring tech professional, TechEduca is your gateway to mastering the future !🚀</p> -->
+         </section>
+
 
         <!-- Courses -->
+        <section id="course">
+            <h1>Our Popular Courses</h1>
+            <p>Enhance your skills with industry-relevant courses designed for all levels of learners.</p>
+            
+            <div class="course-box">
+              
+                <div class="courses">
+                    <img src="images/c1.jpg">
+                    <div class="details">
+                        <div class="level_beg">Beginner</div> <br>
+                        <span>Updated On 17/06/25</span>
+                        <h6>JavaScript Course</h6>
 
-        <!-- footer -->
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            
+                            <span>(2025+)</span>
+                        </div>
+                    </div>
+                    <div class="cost">$49.99</div>
+                    <!-- <br> -->
+                    <!-- <span class="level">Beginner</span> -->
+               </div>
+               
+               <div class="courses">
+                    
+                    <img src="images/c2.jpg">
+                    <div class="details">
+                        <div class="level_inter">Intermediate</div> <br>
+                        <span>Updated On 17/06/25</span>
+                        <h6>Web Design & CSS</h6>
 
-        <script>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            
+                            <span>(2000+)</span>
+                        </div>
+                    </div>
+                    <div class="cost">$49.99</div>
+                    
+                    
+                </div>
 
-        // Navaigation Bar
+                <div class="courses">
+                    <img src="images/c3.jpg">
+                    <div class="details">
+                        <div class="level_adv">Advance</div> <br>
+                        <span>Updated On 17/06/25</span>
+                        <h6>Python Programming</h6>
 
-        </script>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            
+                            <span>(2100+)</span>
+                        </div>
+                    </div>
+                    <div class="cost">$49.99</div>
+                    <!-- <br> -->
+                    <!-- <span class="level">Beginner</span> -->
+                </div>
 
-    </body>
+                <div class="courses">
+                    <img src="images/c4.jpg">
+                    <div class="details">
+                        <div class="level_beg">Beginner</div> <br>
+                        <span>Updated On 17/06/25</span>
+                        <h6> Freelancing & Remote Work</h6>
 
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            
+                            <span>(1500+)</span>
+                        </div>
+                    </div>
+                    <div class="cost">$49.99</div>
+                    <!-- <br> -->
+                    <!-- <span class="level">Beginner</span> -->
+                </div>
+
+                <div class="courses">
+                    <img src="images/c5.jpg">
+                    <div class="details">
+                        <div class="level_inter">Intermediate</div> <br>
+                        <span>Updated On 17/06/25</span>
+                        <h6>Web Development</h6>
+
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            
+                            <span>(3500+)</span>
+                        </div>
+                    </div>
+                    <div class="cost">$49.99</div>
+                    <!-- <br> -->
+                    <!-- <span class="level">Beginner</span> -->
+                </div>
+
+                <div class="courses">
+                    <img src="images/c6.jpg">
+                    <div class="details">
+                        <div class="level_adv">Advance</div> <br>
+                        <span>Updated On 17/06/25</span>
+                        <h6>Angular Framework</h6>
+
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            
+                            <span>(2000+)</span>
+                        </div>
+                    </div>
+                    <div class="cost">$49.99</div>
+                    <!-- <br> -->
+                    <!-- <span class="level">Beginner</span> -->
+                </div>
+
+            </div>
+        </section>
+        
+       
+        <!-- Footer -->
+         <footer id="footer">
+
+            <div class="footer-col">
+                <h3>Top Products</h3>
+                <li>Manage Reputation</li>
+                <li>Power Tools</li>
+                <li>Managed Website</li>
+                <li>Marketing Service</li>
+            </div>
+
+            <div class="footer-col">
+                <h3>Power Tools</h3>
+                <li>Jobs</li>
+                <li>Marketing Service</li>
+                <li>Top Products</li>
+                <li>Manage Reputation</li>
+            </div>
+
+            <div class="footer-col">
+                <h3>Power Tools</h3>
+                <li>Managed Website</li>
+                <li>Manage Reputation</li>
+                <li>Top Products</li>
+                <li>Marketing Service   </li>
+            </div>
+
+            <div class="footer-col">
+                <h3>Guides</h3>
+                <li>Research</li>
+                <li>Experts</li>
+                <li>Managed Website</li>
+                <li>Marketing Service</li>
+            </div>
+
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p>You can trust us. we only send promo offers.</p>
+    
+                <div class="subscribe">
+                    <input type="email" placeholder="Your email Address">
+                    <a href="#" class="green">SUBSCRIBE</a>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>Copyright @ 2025 All Rights Reserved | This template is made by <a href="../Portofilo Website/index.html" target="_blank" id="link_to_portfolio">Pratik</a></p>
+
+                <div class="profile-links">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+
+            </div>
+         </footer>
+
+         <!------------ Back to top Button ----------->
+        <button id="backToTop" onclick="scrollToTop()">↑ Back to Top</button>
+
+        <script src="script.js"> </script>
+</body>
 </html>

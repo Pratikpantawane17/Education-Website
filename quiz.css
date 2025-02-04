@@ -1,0 +1,78 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Quiz Container */
+.quiz-container {
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: auto;
+}
+
+/* Question & Timer */
+#question {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#timer {
+    font-size: 16px;
+    color: red;
+    margin-top: 10px;
+}
+
+/* Options Styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+li:hover {
+    background: #0056b3;
+}
+
+/* Buttons */
+button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #218838;
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .quiz-container {
+        width: 90%;
+    }
+    li {
+        font-size: 14px;
+    }
+}

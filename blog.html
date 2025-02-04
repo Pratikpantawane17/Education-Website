@@ -1,38 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
+<head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tech2 etc Tutorial</title>
+        <title> TechEduca - Education Website </title>
 
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-
+        <!-- External CSS -->
         <link rel="stylesheet" href="style.css">
+
+       <!-- font Awesome CDN link -->
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-    </head>
+</head>
 
-    <body>
+<body>
 
         <!-- Navigation -->
+        <nav>
+            <img src="images/logo.svg">
+            <div class="navigation">
+                <ul>
+                    <!-- For Toggle Menu -->
+                    <i class="fa-solid fa-xmark" id="menu-close"></i>
 
-        <!-- hero -->
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html" class="active">Blogs</a></li>
+                    <li><a href="course.html">Courses</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
 
-        <!-- blog container -->
-
-        <!-- footer -->
-
-        <script>
-
-            // Navaigation Bar
-
-        </script>
+                <img src="images/menu.png" id="menu" onclick="toggle()">
+            </div>
+        </nav>
 
 
-    </body>
+        <!-- Home Landing Page -->
+         <section id="about-home">
+            <h2>Blogs</h2>
+            <!-- <p>At TechEduca, we are on a mission to empower learners with cutting-edge technology education. Our platform bridges the gap between knowledge and real-world application, offering expert-led courses, hands-on projects, and a thriving community. Whether you're a beginner or an aspiring tech professional, TechEduca is your gateway to mastering the future !🚀</p> -->
+         </section>
 
+         <!-- Blogs -->
+         <section id="blog-container">
+            <div class="blogs">
+
+                <div class="post">
+                    <img src="images/b1.jpg">
+                    <h3>Learn Full Stack Web Dev in Easiest Way</h3>
+                    <p>In today’s digital era, web development is one of the most in-demand skills. Whether you are a beginner looking to start your coding journey or an experienced developer aiming to upgrade your expertise, mastering Full Stack Web Development can open doors to endless opportunities.</p>
+                    <a href="post.html" target="_blank">Read More</a>
+                </div>
+                <div class="post">
+                    <img src="images/b2.jpg">
+                    <h3>Eat, Sleep, Code, Repeat – A Developer’s Life</h3>
+                    <p>Being a developer is more than just writing code; it's about solving problems, creating solutions, and continuously learning. Whether you're debugging a complex issue or celebrating a successful deployment, the journey is full of excitement.</p>
+                    <a href="post.html" target="_blank">Read More</a>
+                </div>
+                <div class="post">
+                    <img src="images/b3.jpg">
+                    <h3>Master Full Stack Web Development the Easy Way</h3>
+                    <p>Full stack web development is an in-demand skill that enables you to build complete web applications, handling both front-end and back-end development. Whether you aim to create your own projects or land a high-paying job, mastering full stack development opens up numerous opportunities.</p>
+                    <a href="post.html" target="_blank">Read More</a>
+                </div>
+            
+            </div>
+
+            <div class="cate">
+                <h2>Categories</h2>
+                <hr>
+                <a href="#">Full Stack Web Development</a>
+                <hr>
+                <a href="#">Frontend Web Development</a>
+                <hr>
+                <a href="#">Backend Web Development</a>
+                <hr>
+                <a href="#">Javascript hacks</a>
+                <hr>
+                <a href="#">UI / UX Desing</a>
+                <hr>
+                <a href="#">C++ Programming</a>
+                <hr> 
+            </div>
+
+         </section>
+
+
+      
+
+        <!-- Footer -->
+         <footer id="footer">
+
+            <div class="footer-col">
+                <h3>Top Products</h3>
+                <li>Manage Reputation</li>
+                <li>Power Tools</li>
+                <li>Managed Website</li>
+                <li>Marketing Service</li>
+            </div>
+
+            <div class="footer-col">
+                <h3>Power Tools</h3>
+                <li>Jobs</li>
+                <li>Marketing Service</li>
+                <li>Top Products</li>
+                <li>Manage Reputation</li>
+            </div>
+
+            <div class="footer-col">
+                <h3>Power Tools</h3>
+                <li>Managed Website</li>
+                <li>Manage Reputation</li>
+                <li>Top Products</li>
+                <li>Marketing Service   </li>
+            </div>
+
+            <div class="footer-col">
+                <h3>Guides</h3>
+                <li>Research</li>
+                <li>Experts</li>
+                <li>Managed Website</li>
+                <li>Marketing Service</li>
+            </div>
+
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p>You can trust us. we only send promo offers.</p>
+    
+                <div class="subscribe">
+                    <input type="email" placeholder="Your email Address">
+                    <a href="#" class="green">SUBSCRIBE</a>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>Copyright @ 2025 All Rights Reserved | This template is made by <a href="../Portofilo Website/index.html" target="_blank" id="link_to_portfolio">Pratik</a></p>
+
+                <div class="profile-links">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+
+            </div>
+         </footer>
+
+         <!------------ Back to top Button ----------->
+        <button id="backToTop" onclick="scrollToTop()">↑ Back to Top</button>
+
+
+        <script src="script.js"> </script>
+</body>
 </html>

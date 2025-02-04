@@ -1,45 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
+<head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tech2 etc Tutorial</title>
+        <title> TechEduca - Education Website </title>
 
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-
+        <!-- External CSS -->
         <link rel="stylesheet" href="style.css">
+
+       <!-- font Awesome CDN link -->
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-    </head>
+</head>
 
-    <body>
+<body>
 
         <!-- Navigation -->
+        <!-- <div class="header">
+            <div class="row">
+                
+                <div class="logo">
+                    <img src="images/logo.svg" class="img_logo">
+                </div>
+    
+                <nav class="navbar">
+                    <ul>
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Blogs</li>
+                        <li>Courses</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </nav>
 
-        <!-- Home -->
+            </div>
+        </div> -->
 
-        <!-- features -->
+        
+        <!-- Navigation -->
+        <nav>
+            <img src="images/logo.svg">
+            <div class="navigation">
+                <ul>
+                    <!-- For Toggle Menu -->
+                    <i class="fa-solid fa-xmark" id="menu-close"></i>
+
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                    <li><a href="course.html">Courses</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+
+                <img src="images/menu.png" id="menu" onclick="toggle()">
+            </div>
+        </nav>
+
+        <!-- Home Landing Page -->
+         <section id="home">
+            <h2>Enhance Your Future With TechEduca</h2>
+            <p> Empower your mind with knowledge through our interactive and engaging educational platform. Whether you're a student, professional, or lifelong learner, we offer expertly curated courses, resources, and tools to help you succeed. Explore topics from science and technology to business and humanities, all designed to enhance your skills at your own pace. Join us today and take the next step toward a brighter future! 🚀📚 </p>
+
+            <div class="btn">
+                <a href="about.html" class="blue">Learn More</a>
+                <a href="course.html" class="yellow">Visit Courses</a>
+            </div>
+         </section>
+
+
+         <!-- Features -->
+        <section id="features">
+        
+                <h1>Awesome Features</h1>
+                <p>Revolutionizing education with innovative solutions.</p>
+            
+            <div class="fea-base">
+                <div class="fea-box">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h3>Scholorship Facility</h3>
+                    <p>We provide financial aid and scholarships to deserving students, ensuring that education is accessible to all.</p>
+                </div>
+                <div class="fea-box">
+                    <i class="fa-solid fa-book-bookmark"></i>
+                    <h3>Sell Online Course</h3>
+                    <p>Empower educators and institutions by offering a platform to create and sell courses online with ease.</p>
+                </div>
+                <div class="fea-box">
+                    <i class="fas fa-award"></i>
+                    <h3>Global Certification</h3>
+                    <p>Earn globally recognized certificates upon course completion, enhancing career opportunities worldwide.</p>
+                </div>
+            </div>
+
+        </section>
+
 
         <!-- Courses -->
+        <section id="course">
+            <h1>Our Popular Courses</h1>
+            <p>Enhance your skills with industry-relevant courses designed for all levels of learners.</p>
+            
+            <div class="course-box">
+              
+                <div class="courses">
+                    <img src="images/c1.jpg">
+                    <div class="details">
+                        <div class="level_beg">Beginner</div> <br>
+                        <span>Updated On 17/06/25</span>
+                        <h6>JavaScript Course</h6>
 
-        <!-- Registration -->
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            
+                            <span>(2025+)</span>
+                        </div>
+                    </div>
+                    <div class="cost">$49.99</div>
+                    <!-- <br> -->
+                    <!-- <span class="level">Beginner</span> -->
+               </div>
+               
+               <div class="courses">
+                    
+                    <img src="images/c2.jpg">
+                    <div class="details">
+                        <div class="level_inter">Intermediate</div> <br>
+                        <span>Updated On 17/06/25</span>
+                        <h6>Web Design & CSS</h6>
 
-        <!-- Profiles -->
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            
+                            <span>(2000+)</span>
+                        </div>
+                    </div>
+                    <div class="cost">$49.99</div>
+                    
+                    
+                </div>
+
+                <div class="courses">
+                    <img src="images/c3.jpg">
+                    <div class="details">
+                        <div class="level_adv">Advance</div> <br>
+                        <span>Updated On 17/06/25</span>
+                        <h6>Python Programming</h6>
+
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            
+                            <span>(2100+)</span>
+                        </div>
+                    </div>
+                    <div class="cost">$49.99</div>
+                    <!-- <br> -->
+                    <!-- <span class="level">Beginner</span> -->
+                </div>
+
+                <div class="courses">
+                    <img src="images/c4.jpg">
+                    <div class="details">
+                        <div class="level_beg">Beginner</div> <br>
+                        <span>Updated On 17/06/25</span>
+                        <h6> Freelancing & Remote Work</h6>
+
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            
+                            <span>(1500+)</span>
+                        </div>
+                    </div>
+                    <div class="cost">$49.99</div>
+                    <!-- <br> -->
+                    <!-- <span class="level">Beginner</span> -->
+                </div>
+
+                <div class="courses">
+                    <img src="images/c5.jpg">
+                    <div class="details">
+                        <div class="level_inter">Intermediate</div> <br>
+                        <span>Updated On 17/06/25</span>
+                        <h6>Web Development</h6>
+
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            
+                            <span>(3500+)</span>
+                        </div>
+                    </div>
+                    <div class="cost">$49.99</div>
+                    <!-- <br> -->
+                    <!-- <span class="level">Beginner</span> -->
+                </div>
+
+                <div class="courses">
+                    <img src="images/c6.jpg">
+                    <div class="details">
+                        <div class="level_adv">Advance</div> <br>
+                        <span>Updated On 17/06/25</span>
+                        <h6>Angular Framework</h6>
+
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            
+                            <span>(2000+)</span>
+                        </div>
+                    </div>
+                    <div class="cost">$49.99</div>
+                    <!-- <br> -->
+                    <!-- <span class="level">Beginner</span> -->
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Registration Form -->
+        <section id="registration">
+            
+            <div class="reminder">
+
+                <p>Get Access to 100+ Online Courses for Free</p>
+                <h1>Registration To Get It</h1>
+
+                <div class="time">
+                    <div class="date">17 <br> Days</div>
+                    <div class="date">06 <br> Hours </div>
+                    <div class="date">20 <br> Minutes </div>
+                    <div class="date">25 <br> Seconds </div>
+                </div>
+            </div>
+
+            <div class="form">
+                <h3>Create Free Account NOW !</h3>
+
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email Address">
+                <input type="password" placeholder="Password">
+
+                <div class="submit_btn" onclick="showPopup()" class="yellow">
+                    Submit
+                </div>
+              
+            </div>
+            
+        </section>
+
+            <!-- Custom popup modal -->
+            <div id="popup" class="popup-container">
+                <div id="popupBox" class="popup-box">
+                    <div class="success-icon">✔</div>
+                    <p class="message">Account Created Successfully!</p>
+                    <button class="ok-btn" onclick="closePopup()">OK</button>
+                </div>
+            </div>
+
+
+        <!-- Community Experts -->
+        <section id="experts">
+            <h1>Community Experts</h1>
+            <p>Connect with industry leaders and experienced mentors to elevate your learning journey.</p>
+            <div class="expert-box">
+                
+                <div class="profile">
+                    <img src="images/pro1.webp">
+                    <h6>Sweta Tagde</h6>
+                    <p>Full Stack Web Developer</p>
+                    <div class="profile-links">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                </div>
+
+                <div class="profile">
+                    <img src="images/pro2.webp">
+                    <h6>Jason chua</h6>
+                    <p>DSA Expert</p>
+                    <div class="profile-links">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                </div>
+
+                <div class="profile">
+                    <img src="images/pro3.webp">
+                    <h6>Maalik Halper</h6>
+                    <p>Python & Algorithms Expert</p>
+                    <div class="profile-links">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                </div>
+
+                <div class="profile">
+                    <img src="images/pro4.webp">
+                    <h6>Jennifer Lopez</h6>
+                    <p>Design Expert</p>
+                    <div class="profile-links">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
 
         <!-- Footer -->
+         <footer id="footer">
+
+            <div class="footer-col">
+                <h3>Top Products</h3>
+                <li>Manage Reputation</li>
+                <li>Power Tools</li>
+                <li>Managed Website</li>
+                <li>Marketing Service</li>
+            </div>
+
+            <div class="footer-col">
+                <h3>Power Tools</h3>
+                <li>Jobs</li>
+                <li>Marketing Service</li>
+                <li>Top Products</li>
+                <li>Manage Reputation</li>
+            </div>
+
+            <div class="footer-col">
+                <h3>Power Tools</h3>
+                <li>Managed Website</li>
+                <li>Manage Reputation</li>
+                <li>Top Products</li>
+                <li>Marketing Service   </li>
+            </div>
+
+            <div class="footer-col">
+                <h3>Guides</h3>
+                <li>Research</li>
+                <li>Experts</li>
+                <li>Managed Website</li>
+                <li>Marketing Service</li>
+            </div>
+
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p>You can trust us. we only send promo offers.</p>
+    
+                <div class="subscribe">
+                    <input type="email" placeholder="Your email Address">
+                    <a href="#" class="green">SUBSCRIBE</a>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>Copyright @ 2025 All Rights Reserved | This template is made by <a href="../Portofilo Website/index.html" target="_blank" id="link_to_portfolio">Pratik</a></p>
+
+                <div class="profile-links">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+
+            </div>
+         </footer>
+
+         
 
 
-        <script>
-
-            // Navaigation Bar
-
-        </script>
+        <!------------ Back to top Button ----------->
+        <button id="backToTop" onclick="scrollToTop()">↑ Back to Top</button>
 
 
-    </body>
-
+        <script src="script.js"> </script>
+</body>
 </html>

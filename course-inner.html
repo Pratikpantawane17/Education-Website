@@ -1,39 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
+<head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tech2 etc Tutorial</title>
+        <title> TechEduca - Education Website </title>
 
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-
+        <!-- External CSS -->
         <link rel="stylesheet" href="style.css">
+
+       <!-- font Awesome CDN link -->
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-    </head>
+</head>
 
-    <body>
+<body>
 
         <!-- Navigation -->
+        <nav>
+            <img src="images/logo.svg">
+            <div class="navigation">
+                <ul>
+                    <!-- For Toggle Menu -->
+                    <i class="fa-solid fa-xmark" id="menu-close"></i>
 
-        <!-- Home -->
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                    <li><a href="course.html" class="active">Courses</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
 
-        <!-- course details -->
-
-        <!-- footer -->
-
-
-        <script>
-
-            // Navaigation Bar
-
-        </script>
+                <img src="images/menu.png" id="menu" onclick="toggle()">
+            </div>
+        </nav>
 
 
-    </body>
+        <!-- Home Landing Page -->
+         <section id="about-home">
+            <h2>Enroll Our Popular Courses And Skill Up</h2>
+            <!-- <p>At TechEduca, we are on a mission to empower learners with cutting-edge technology education. Our platform bridges the gap between knowledge and real-world application, offering expert-led courses, hands-on projects, and a thriving community. Whether you're a beginner or an aspiring tech professional, TechEduca is your gateway to mastering the future !🚀</p> -->
+         </section>
 
+         <section id="course-inner">
+
+            <div class="overview">
+
+                <img src="images/c1.jpg" class="course-img">
+
+                <div class="course-head">
+
+                    <div class="c-name">
+                        <div class="level_beg">Beginner</div> <br>
+
+                        <h2>Javascript Course</h2>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <p>Modern javascript from the beggining - all the way up to JS export level! The must have JavaScript resource in 2021.</p>
+                    </div>
+                    <span>$49.99</span>
+
+                </div>
+
+                <h3>Instructor</h3>
+                <div class="tutor">
+                    <img src="images/pro1.webp">
+                    <div class="tutor-det">
+                        <h5>Sweta Tagde</h5>
+                        <p>Full Stack Web Developer at Google</p>
+                    </div>
+                </div>
+                
+                <hr>
+                <h3>Course Overview</h3>
+                <p>JavaScript is a versatile programming language essential for modern web development. It enables dynamic and interactive web pages, handling animations, form validation, and real-time updates. Initially a client-side language, JavaScript now powers server-side development with Node.js. <br><br>
+                
+                Its vast ecosystem includes frameworks like React, Angular, and Vue.js, simplifying front-end development. With features like ES6+ syntax, promises, and async/await, JavaScript ensures efficient performance and readable code. <br><br> 
+                
+                Mastering JavaScript opens doors to web and mobile app development, game design, and AI applications. It empowers developers to build responsive, user-friendly applications, making it a must-learn skill in tech.</p>
+
+                <hr>
+                <h3>What will you'll learn</h3>
+                <div class="learn">
+                    <p> <i class="far fa-check-circle"></i>Learn Javascript from Scratch - Beginner to Advance</p>
+                    <p><i class="far fa-check-circle"></i>Write clean, modern code using ES6+ features.</p>
+                    <p><i class="far fa-check-circle"></i>Build interactive websites with dynamic content and events.</p>
+                    <p><i class="far fa-check-circle"></i>Learn asynchronous JavaScript with promises and APIs.</p>
+                    <p><i class="far fa-check-circle"></i>Work on Real-world and Industry level projects to apply your skills.</p>
+                    <p><i class="far fa-check-circle"></i>Gain in-demand skills to boost your career or freelance.</p>
+                </div>
+            </div>
+
+            <div class="enroll">
+                <h3>This course includes:</h3>
+    
+                <p>
+                    <i class="fa-solid fa-video"></i> 52 Hours video
+                </p>
+                <p>
+                    <i class="fa-solid fa-newspaper"></i> 5 Articles
+                </p>
+                <p>
+                    <i class="fa-solid fa-download"></i> Downloadable resources
+                </p>
+                <p>
+                    <i class="fa-solid fa-key"></i> Full Lifetime access
+                </p>
+                <p>
+                    <i class="fa-solid fa-tv"></i> Access on mobile and TV
+                </p>
+                <p>
+                    <i class="fa-solid fa-paperclip"></i> Assignments
+                </p>
+
+                <div class="enroll-btn">
+                    <a href="https://www.youtube.com/watch?v=u3v2H5mwixY&list=PLHzs8hOU-sf5_9JNubPJpgMvTQSlaeRCe" class="blue">Enroll Now</a>
+                </div>
+            </div>
+
+         </section>
+
+
+
+        <!-- Footer -->
+         <footer id="footer">
+
+            <div class="footer-col">
+                <h3>Top Products</h3>
+                <li>Manage Reputation</li>
+                <li>Power Tools</li>
+                <li>Managed Website</li>
+                <li>Marketing Service</li>
+            </div>
+
+            <div class="footer-col">
+                <h3>Power Tools</h3>
+                <li>Jobs</li>
+                <li>Marketing Service</li>
+                <li>Top Products</li>
+                <li>Manage Reputation</li>
+            </div>
+
+            <div class="footer-col">
+                <h3>Power Tools</h3>
+                <li>Managed Website</li>
+                <li>Manage Reputation</li>
+                <li>Top Products</li>
+                <li>Marketing Service   </li>
+            </div>
+
+            <div class="footer-col">
+                <h3>Guides</h3>
+                <li>Research</li>
+                <li>Experts</li>
+                <li>Managed Website</li>
+                <li>Marketing Service</li>
+            </div>
+
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p>You can trust us. we only send promo offers.</p>
+    
+                <div class="subscribe">
+                    <input type="email" placeholder="Your email Address">
+                    <a href="#" class="green">SUBSCRIBE</a>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>Copyright @ 2025 All Rights Reserved | This template is made by <a href="../Portofilo Website/index.html" target="_blank" id="link_to_portfolio">Pratik</a></p>
+
+                <div class="profile-links">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+
+            </div>
+         </footer>
+
+
+         <!------------ Back to top Button ----------->
+        <button id="backToTop" onclick="scrollToTop()">↑ Back to Top</button>
+
+        <script src="script.js"> </script>
+</body>
 </html>

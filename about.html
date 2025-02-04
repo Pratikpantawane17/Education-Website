@@ -1,41 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
+<head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tech2 etc Tutorial</title>
+        <title> TechEduca - Education Website </title>
 
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-
+        <!-- External CSS -->
         <link rel="stylesheet" href="style.css">
+
+       <!-- font Awesome CDN link -->
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-    </head>
+</head>
 
-    <body>
+<body>
 
         <!-- Navigation -->
+        <nav>
+            <img src="images/logo.svg">
+            <div class="navigation">
+                <ul>
+                    <!-- For Toggle Menu -->
+                    <i class="fa-solid fa-xmark" id="menu-close"></i>
 
-        <!-- hero -->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                    <li><a href="course.html">Courses</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
 
-        <!-- features -->
-
-        <!-- trusted by -->
-
-        <!-- footer -->
-
-
-        <script>
-
-            // Navaigation Bar
-
-        </script>
+                <img src="images/menu.png" id="menu" onclick="toggle()">
+            </div>
+        </nav>
 
 
-    </body>
+        <!-- Home Landing Page -->
+         <section id="about-home">
+            <h2>About TechEduca</h2>
+            <!-- <p>At TechEduca, we are on a mission to empower learners with cutting-edge technology education. Our platform bridges the gap between knowledge and real-world application, offering expert-led courses, hands-on projects, and a thriving community. Whether you're a beginner or an aspiring tech professional, TechEduca is your gateway to mastering the future !🚀</p> -->
+         </section>
 
+    
+         <!-- About section starts from here -->
+        <section id="about-container">
+            
+            <div class="about-img">
+                <img src="images/a.png" >
+            </div>
+
+            <div class="about-text">
+                <h2>
+                    Welcome to TechEduca, Enhance your skills with best online courses.
+                </h2>
+                <p>
+                    You can start and finish one of these popular courses in under a day - for free! Check out the list below.. Take the course for free.
+                </p>
+
+                <div class="about-fe">
+                    <img src="images/fe1.png" >
+                    <div class="fe-text">
+                        <h5>400+ Courses</h5>
+                        <p>
+                            Explore a vast collection of courses designed to boost your skills and knowledge at your own pace.
+                        </p>
+                    </div>
+                </div>
+                <div class="about-fe">
+                    <img src="images/fe2.png" >
+                    <div class="fe-text">
+                        <h5>Lifetime Access</h5>
+                        <p>
+                            Enjoy unlimited access to all courses anytime, anywhere, for lifelong learning.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+	    <!-- About section ends from here -->
+
+
+        <!-- About Us Part / container -->
+        <!------ 🌟 Created By Me Responsive bhi hai 😁 - Starts from here  ---->
+         <!-- <section id="about-container">
+            
+            <div class="about-img">
+                <img src="images/a.png">
+            </div>
+
+            <div class="about-text">
+                <h2>Welcome to TechEduca, Enhance your skills with best online courses.</h2>
+                <p>You can start and finish one of these popular courses in under a day - for free! Check out the list below.. Take the course for free.</p>
+
+                <div class="images">
+                    <img src="images/fe1.png">
+                    <div>
+                        <h5>400+ Courses</h5>
+                        <p>You can start and finish one of these popular courses in under our site</p>
+                    </div>
+                   
+                </div>
+
+                <div class="images">
+                    <img src="images/fe2.png">
+
+                    <div>
+                        <h5>Lifetime Access</h5>
+                    <p>You can start and finish one of these popular courses in under our site</p>
+                    </div>      
+                </div>
+            </div>
+
+         </section> -->
+         <!-- 🌟 Created By Me Responsive bhi hai 😁 - Ends from here -->
+
+
+         <!-- Features -->
+         <section id="features">
+        
+            <h1>Awesome Features</h1>
+            <p>Revolutionizing education with innovative solutions.</p>
+        
+        <div class="fea-base">
+            <div class="fea-box">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h3>Scholorship Facility</h3>
+                <p>We provide financial aid and scholarships to deserving students, ensuring that education is accessible to all.</p>
+            </div>
+            <div class="fea-box">
+                <i class="fa-solid fa-book-bookmark"></i>
+                <h3>Sell Online Course</h3>
+                <p>Empower educators and institutions by offering a platform to create and sell courses online with ease.</p>
+            </div>
+            <div class="fea-box">
+                <i class="fas fa-award"></i>
+                <h3>Global Certification</h3>
+                <p>Earn globally recognized certificates upon course completion, enhancing career opportunities worldwide.</p>
+            </div>
+        </div>
+
+         </section>
+
+
+          <!-- Trust Section -->
+          <section id="trust">
+            <h1>Trusted By</h1>
+            <p>Join thousands of learners who trust us to enhance their skills and achieve their career goals.</p>
+
+            <div class="trust-img">
+                <img src="images/trust (1).png">
+                <img src="images/trust (2).png">
+                <img src="images/trust (3).png">
+                <img src="images/trust (4).png">
+                <img src="images/trust (5).png">
+                <img src="images/trust (6).png">
+            </div>
+         </section>
+
+
+        <!-- Footer -->
+         <footer id="footer">
+
+            <div class="footer-col">
+                <h3>Top Products</h3>
+                <li>Manage Reputation</li>
+                <li>Power Tools</li>
+                <li>Managed Website</li>
+                <li>Marketing Service</li>
+            </div>
+
+            <div class="footer-col">
+                <h3>Power Tools</h3>
+                <li>Jobs</li>
+                <li>Marketing Service</li>
+                <li>Top Products</li>
+                <li>Manage Reputation</li>
+            </div>
+
+            <div class="footer-col">
+                <h3>Power Tools</h3>
+                <li>Managed Website</li>
+                <li>Manage Reputation</li>
+                <li>Top Products</li>
+                <li>Marketing Service   </li>
+            </div>
+
+            <div class="footer-col">
+                <h3>Guides</h3>
+                <li>Research</li>
+                <li>Experts</li>
+                <li>Managed Website</li>
+                <li>Marketing Service</li>
+            </div>
+
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p>You can trust us. we only send promo offers.</p>
+    
+                <div class="subscribe">
+                    <input type="email" placeholder="Your email Address">
+                    <a href="#" class="green">SUBSCRIBE</a>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>Copyright @ 2025 All Rights Reserved | This template is made by <a href="../Portofilo Website/index.html" target="_blank" id="link_to_portfolio">Pratik</a></p>
+
+                <div class="profile-links">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+
+            </div>
+         </footer>
+
+
+         <!------------ Back to top Button ----------->
+        <button id="backToTop" onclick="scrollToTop()">↑ Back to Top</button>
+
+        <script src="script.js"> </script>
+</body>
 </html>
